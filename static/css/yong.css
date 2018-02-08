@@ -1,0 +1,157 @@
+/* 
+    ALL
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 
+    ABOUT
+*/
+
+#ABOUT {
+    background-color: black;
+}
+
+/* 
+    ABOUT-CARD
+*/
+
+#ABOUT-CARD {
+    background-color: #3E35CC;
+}
+
+.about-section {
+    background-color: #3E35CC!important;
+}
+
+/* 
+    BODY
+*/
+
+body {
+    background-color: black;
+}
+
+/* 
+    CONTAINER CLASSES
+*/
+
+.black-background {
+    background-color: black;
+}
+
+/* 
+    CUSTOM HEADERS
+*/
+
+.contrast-title-black {
+    color: black!important;
+    background-color: white!important; 
+    border-radius: .6rem;
+    text-align: center;
+}
+
+.contrast-title-white {
+    color: white;
+    background-color: #3E35CC; 
+    border-radius: .6rem;
+    text-align: center;
+}
+
+.title-background {
+    background-color: #3E35CC;
+}
+
+/* 
+    LINKS
+*/
+
+.link {
+    color: black!important;
+}
+
+link:visited {
+    color: black;
+}
+
+.link:hover {
+    color: black!important;
+}
+
+.linkalt {
+    color: black!important;
+}
+
+.linkalt:hover {
+    color: white!important;
+}
+
+/*
+    NAVBAR
+*/
+
+.navbar {
+    background-color: white;
+    border-bottom: solid black;
+}
+
+/*
+    NAVBAR ICON
+*/
+
+#navButton {
+    background: black;
+    outline: purple;
+    border-color: #3E35CC;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*
+    NAVBAR LINKS
+*/
+
+.nav-link {
+    text-align: center;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    color: white!important;
+    border-radius: .6rem;
+    background: black;
+}
+
+.nav-link:hover {
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    color: black!important;
+    background: #3E35CC;
+}
+
+/* 
+    VIDEO SELECTION
+*/
+
+#videoSelect {
+    color: #3E35CC!important;
+}
+
+/* 
+    SPEAKERS
+*/
+
+.speakerStyle {
+    text-align: left;
+    color: #3E35CC;
+    font-size: 2rem;
+    border-radius: .6rem;
+    background-color: white;
+    border: solid black;
+}
+
+.speaker:hover {
+    color: #3E35CC;
+}
