@@ -35,6 +35,14 @@ body {
 }
 
 /* 
+    CARD CLASSES
+*/
+
+.card-class {
+    background-color: #0054a4;
+}
+
+/* 
     CONTAINER CLASSES
 */
 
@@ -60,6 +68,18 @@ body {
     text-align: center;
 }
 
+#header-background {
+    background-color: #0054a4;
+}
+
+#header-text {
+    color: white;
+}
+
+#summer-courses-header {
+    color: #fff200;
+}
+
 .title-background {
     background-color: #3E35CC;
 }
@@ -69,23 +89,23 @@ body {
 */
 
 .link {
-    color: black!important;
+    color: #fff200!important;
 }
 
 link:visited {
-    color: black;
+    color: #00aeef;
 }
 
 .link:hover {
     color: black!important;
 }
 
-.linkalt {
-    color: black!important;
-}
+/*
+    MAIN-CONTAINER
+*/
 
-.linkalt:hover {
-    color: white!important;
+#main-background {
+    background-color: #00aeef;
 }
 
 /*
