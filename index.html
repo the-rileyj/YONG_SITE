@@ -37,25 +37,29 @@
                         </h1>
                     </v-flex>
                 </v-layout>
-                <v-layout class="elevation-24 card-class mx-1 mt-4 mb-2 white--text" row v-for="t in teachers">
+                <v-layout class="elevation-24 card-class mx-1 mt-3 mb-2 pa-2 white--text" row>
                     <v-flex xs12 text-xs-center>
-                        <h2 id="summer-courses-header">
+                        <h2 class="yellow-header">
                             Cybersecurity Courses for Summer 2018
                         </h2>
+                        <h5>
+                            Our cybersecurity courses emphasis hands-on labs and assignments in cybersecurity. 
+                            Faculty participants in these classes will be able to access our cloud-based Information Assurance (IA) Lab and other online resources.
+                        </h5>
                     </v-flex>
                 </v-layout>
-                <v-layout class="elevation-24 card-class mx-1 white--text" row v-for="t in teachers">
+                <v-layout class="elevation-24 card-class mx-1 white--text mb-2" row v-for="t in teachers">
                     <v-flex xs12>
                         <v-container fluid>
-                            <v-layout row>
+                            <v-layout row v-if="images">
                                 <v-flex md4>
                                     <img class="elevation-24 pl-1" :src="t.image">
                                 </v-flex>
-                                <v-flex md8 text-xs-left class="ml-2">
+                                <v-flex md8 text-xs-left class="ml-2 pl-2 course-information elevation-24">
                                     <v-container fluid>
                                         <v-layout row>
                                             <v-flex xs12>
-                                                <h2>
+                                                <h2 class="course-title">
                                                     {{t.courseTitle}}
                                                 </h2>
                                                 <h3>
@@ -65,9 +69,32 @@
                                         </v-layout>
                                         <v-layout row>
                                             <v-flex xs12>
-                                                <h3>
+                                                <h5>
                                                     {{t.courseDescription}}
+                                                </h5>
+                                            </v-flex>
+                                        </v-layout>
+                                    </v-container>
+                                </v-flex>
+                            </v-layout>
+                            <v-layout row v-else>
+                                <v-flex md12 text-xs-left class="ml-2 pl-2 course-information elevation-24">
+                                    <v-container fluid>
+                                        <v-layout row>
+                                            <v-flex xs12>
+                                                <h2 class="course-title">
+                                                    {{t.courseTitle}}
+                                                </h2>
+                                                <h3>
+                                                    <a class="link" :href="t.infoLink" target="_blank">{{t.name}}</a>
                                                 </h3>
+                                            </v-flex>
+                                        </v-layout>
+                                        <v-layout row>
+                                            <v-flex xs12>
+                                                <h5>
+                                                    {{t.courseDescription}}
+                                                </h5>
                                             </v-flex>
                                         </v-layout>
                                     </v-container>
@@ -76,6 +103,136 @@
                         </v-container>
                     </v-flex>
                 </v-layout>
+                <v-layout class="elevation-24 card-class mx-1 px-2 white--text mb-2" row>
+                    <v-container>
+                        <v-layout>
+                            <v-flex xs12 text-align-left>
+                                <h1  class="yellow-header">
+                                    Summer Schedule
+                                </h1>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout>
+                            <v-flex md12>
+                                <ul>
+                                    <li>
+                                        The summer courses are 3-credit courses.
+                                    </li>
+                                    <li>
+                                        The 12-week summer courses starts from May 14, 2018 to August 3, 2018.
+                                    </li>
+                                    <li>
+                                        Each course has a capacity of 25 students. 
+                                    </li>
+                                    <li>
+                                        Faculty participants will register as DSU students to take summer courses.
+                                    </li>
+                                    <li>
+                                        These courses are free for faculty participants. 
+                                    </li>
+                                    <li>
+                                        All the courses are online. The course materials including class videos, slides, assignments, labs, projects will all be available through Desire to Learn (D2L) system at DSU.
+                                    </li>
+                                </ul>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                </v-layout>
+                <v-layout class="elevation-24 card-class mx-1 px-2 white--text mb-2" row>
+                    <v-container>
+                        <v-layout>
+                            <v-flex xs12 text-align-left>
+                                <h1  class="yellow-header">
+                                    Eligibility
+                                </h1>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout>
+                            <v-flex md12>
+                                <ul>
+                                    <li>
+                                        Post-docs, research scientists, and faculty researchers and educators from 2-year and 4-year colleges.
+                                    </li>
+                                    <li>
+                                        Bachelor in Computer Science, Cyber Operations, or related field.
+                                    </li>
+                                    <li>
+                                        Priority will be given to faculty members who teach cybersecurity related courses in your home institutions.
+                                    </li>
+                                </ul>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                </v-layout>
+                <v-layout class="elevation-24 card-class mx-1 px-2 white--text mb-2" row>
+                    <v-container>
+                        <v-layout>
+                            <v-flex xs12 text-align-left>
+                                <h1  class="yellow-header">
+                                    Benefits
+                                </h1>
+                            </v-flex>
+                        </v-layout>
+                        <v-layout>
+                            <v-flex md12>
+                                <ul>
+                                    <li>
+                                        The summer courses are free to faculty participants.
+                                    </li>
+                                    <li>
+                                        Funds are available to support faculty participants to host cybersecurity workshops in their institutions and develop new curriculums in cybersecurity.
+                                    </li>
+                                    <li>
+                                        DSU offers two master programs, i.e., Master Science in Applied Computer Science and Master Science in Information Assurance and Computer Security, and one doctoral program, i.e., Doctoral of Science in Cyber Security. The credits a faculty participant earned through the CyberTraining Faculty program could be transferred to credits towards graduate degrees at DSU if the participant is admitted to one of the graduate programs at DSU and the credits are approved by the participant’s plan of study.
+                                    </li>
+                                </ul>
+                            </v-flex>
+                        </v-layout>
+                    </v-container>
+                </v-layout>
+                <v-layout class="elevation-24 card-class mx-1 px-2 white--text mb-2" row>
+                        <v-container>
+                            <v-layout>
+                                <v-flex xs12 text-align-left>
+                                    <h1  class="yellow-header">
+                                        Important Dates
+                                    </h1>
+                                </v-flex>
+                            </v-layout>
+                            <v-layout>
+                                <v-flex md12>
+                                    <ul>
+                                        <li>
+                                            Application deadline: April 15, 2018
+                                        </li>
+                                        <li>
+                                            Notification of acceptance: May 1st, 2018
+                                        </li>
+                                        <li>
+                                            Summer program: May 14 - August 3, 2018
+                                        </li>
+                                    </ul>
+                                </v-flex>
+                            </v-layout>
+                        </v-container>
+                    </v-layout><v-layout class="elevation-24 card-class mx-1 px-2 white--text mb-2" row>
+                            <v-container>
+                                <v-layout>
+                                    <v-flex xs12 text-align-left>
+                                        <h1 class="yellow-header">
+                                            How to Apply
+                                        </h1>
+                                    </v-flex>
+                                </v-layout>
+                                <v-layout>
+                                    <v-flex md12>
+                                        <h3>
+                                            Contact Dr. Yong Wang (yong.wang@dsu.edu) for application procedures.
+                                        </h3>
+                                    </v-flex>
+                                </v-layout>
+                            </v-container>
+                        </v-layout>
             </v-container>
         </v-app>
     </div>  

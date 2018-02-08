@@ -42,6 +42,14 @@ body {
     background-color: #0054a4;
 }
 
+.course-information {
+    background-color: #00aeef;
+}
+
+.course-title {
+    color: black;
+}
+
 /* 
     CONTAINER CLASSES
 */
@@ -76,7 +84,7 @@ body {
     color: white;
 }
 
-#summer-courses-header {
+.yellow-header {
     color: #fff200;
 }
 
