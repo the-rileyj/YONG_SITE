@@ -135,28 +135,23 @@ link:visited {
     border-color: #3E35CC;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
 /*
     NAVBAR LINKS
 */
 
+#section-nav {
+    background-color: white;
+}
+
 .nav-link {
     text-align: center;
-    transition: background-color 0.5s;
     transition: color 0.5s;
-    color: white!important;
-    border-radius: .6rem;
-    background: black;
+    color: #0054a4!important;
 }
 
 .nav-link:hover {
-    transition: background-color 0.5s;
     transition: color 0.5s;
-    color: black!important;
-    background: #3E35CC;
+    color: #fff200!important;
 }
 
 /* 
